@@ -1,0 +1,11 @@
+#gumroad:hover {
+  box-shadow: 4px 4px #ddd;
+  transform: translateY(-0.25rem);
+}
+
+#gumroad:active,
+#gumroad:focus {
+  background-color: #ff7533;
+  transform: translateY(0rem);
+  box-shadow: none;
+}

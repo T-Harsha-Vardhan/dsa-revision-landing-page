@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/3649fcdf0d.js"></script>
+  </head>
+  <body class="px-3 md:px-[56px] font-[roboto]">
+    <header>
+      <div class="flex justify-start items-center py-4">
+        <img class="mr-2" src="./assets/logo.svg" alt="logo" />
+        <p class="text-2xl font-bold">DSA Revision</p>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="my-6 md:flex md:items-center md:gap-6">
+        <div class="pt-6 mb-12 md:mb-0">
+          <h1 class="text-[2rem] font-bold mb-3 font-[quicksand] leading-tight">
+            Best way to revise for your next coding interview
+          </h1>
+          <p class="text-[#4c527d] font-normal text-lg mb-4">
+            Get everything in a single guide: Data structures, algorithms,
+            patterns, visualizers, questions, examples, solutions, explanations,
+            and much more!
+          </p>
+          <button
+            id="gumroad"
+            class="flex w-full bg-[#ddd] hover:bg-pink-500 justify-center items-center py-[12px] rounded"
+          >
+            <span class="text-base font-semibold mr-2">Buy FREE through</span>
+            <img
+              class="w-[calc(1em_/_0.14)] min-h-4"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTU3IiBoZWlnaHQ9IjIyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik05My4yOTMuNzc4Yy0zLjI0MyAwLTYuNDEzIDIuODA1LTYuNzc3IDYuODU4VjEuMTEyaC00LjY1N3YxOS42NzFoNC43MTR2LTkuNTIxYzAtMi42NjcgMS45NzktNi40MyA2LjcyLTYuNDNWLjc3OFptNDkuNDg1IDE2Ljg1NlY0LjE1N2gyLjczMWMzLjY0MSAwIDYuNTk5IDIuMTc0IDYuNTk5IDYuNjMgMCA0LjQ1Ni0yLjk1OCA2Ljg0Ny02LjU5OSA2Ljg0N2gtMi43MzFabS00LjY2NSAzLjE1Mmg3Ljk2NWM0Ljg5MiAwIDEwLjkyMi0zLjA0MyAxMC45MjItOS45OTkgMC02Ljg0Ny02LjAzLTkuNjczLTEwLjkyMi05LjY3M2gtNy45NjV2MTkuNjcyWm0tMTcuODg5LTkuNzhjMC0zLjU4NyAxLjkzNC02LjUyMSA1LjEyLTYuNTIxIDMuMDcyIDAgNC43NzkgMi45MzQgNC43NzkgNi41MiAwIDMuNTg3LTEuNzA3IDYuNTIyLTQuNzc5IDYuNTIyLTMuMTg2IDAtNS4xMi0yLjkzNS01LjEyLTYuNTIxWm0tNC43NzkuMjE3YzAgNS44NjkgMy4xODYgOS45OTkgOC4xOTIgOS45OTkgMy42NDEgMCA1LjgwMy0yLjI4MiA2Ljk0MS01Ljk3OHY1LjU0M2g0LjY2NFYxLjExNmgtNC42NjR2NS4yMTZDMTI5LjU1NCAyLjg1NSAxMjcuMzkyLjc5IDEyMy45NzkuNzljLTUuMTIgMC04LjUzNCA0LjQ1Ni04LjUzNCAxMC40MzNaTTkuMjE2IDIxLjIyMkMzLjQxMyAyMS4yMjIgMCAxNi43NjYgMCAxMS4yMjMgMCA1LjQ2MyAzLjc1NS43OSAxMC45MjMuNzljNy4zOTUgMCA5Ljg5OCA0Ljc4MiAxMC4wMTIgNy40OTloLTUuMzQ3Yy0uMTE0LTEuNTIyLTEuNDgtMy44MDQtNC43OC0zLjgwNC0zLjUyNiAwLTUuODAyIDIuOTM0LTUuODAyIDYuNTIgMCAzLjU4NyAyLjI3NiA2LjUyMiA1LjgwMyA2LjUyMiAzLjE4NiAwIDQuNTUxLTIuMzkxIDUuMTItNC43ODJoLTUuMTJ2LTEuOTU3aDEwLjc0M3YxMEgxNi44NHYtNi4zMDRjLS4zNDEgMi4yODItMS44MiA2LjczOC03LjYyMyA2LjczOFptMjEuODkyLS4wMDJjLTQuNDM3IDAtNy4xNjgtMi44MjUtNy4xNjgtOC40NzdWMS4xMTRoNC43Nzl2MTEuNjNjMCAyLjkzNCAxLjQ3OSA0LjM0NyAzLjk4MiA0LjM0NyA0Ljg5MiAwIDYuNzEzLTUuNzYgNi43MTMtOS43ODJWMS4xMTRoNC43Nzh2MTkuNjcyaC00LjY2NHYtNy4yODJjLS45MSA0LjAyMS0zLjQxNCA3LjcxNy04LjQyIDcuNzE3Wk03Mi43NDEuNzc4Yy00LjA3NyAwLTYuNjQ5IDMuNzYyLTcuNDg4IDcuMjQtLjE0NC00LjY2LTIuNTQ0LTcuMjQtNi4zODMtNy4yNC0zLjMxOCAwLTYuMzk2IDIuODI2LTcuMTk1IDcuMjk3VjEuMTEzaC00LjY1OHYxOS42NzJoNC43MTh2LTcuMDUyYzAtMS43NDkuNzYzLTguOTI0IDUuNTEyLTguOTI0IDMuMDc3IDAgMy4zOTggMi42NTEgMy4zOTggNi4yNzV2OS43MDFoNC43MTZ2LTcuMDUyYzAtMS43NDkuNzk0LTguOTI0IDUuNTQ0LTguOTI0IDMuMDc0IDAgMy4zOTIgMi42NTEgMy4zOTIgNi4yNzV2OS43MDFoNC43MjJWOS4xNWMuMDIyLTUuNTgyLTIuMDQyLTguMzctNi4yNzgtOC4zN1ptMzAuNjc0IDBDOTcuMzA2Ljc3OCA5My4xNjggNS4zNTMgOTMuMTY4IDExYzAgNi4yMjEgMy45MzYgMTAuMjIgMTAuMjQ3IDEwLjIyIDYuMTA4IDAgMTAuMzItNC41NzQgMTAuMzItMTAuMjIgMC02LjIyMi00LjAxMy0xMC4yMjItMTAuMzItMTAuMjIyWm0wIDE2Ljk2Yy0zLjU1NiAwLTUuODYtMi44NzUtNS44Ni02LjczOCAwLTMuODY0IDIuMzEyLTYuNzQgNS44Ni02Ljc0IDMuNTQ3IDAgNS43NjYgMi44NzYgNS43NjYgNi43NCAwIDMuODYzLTIuMjIxIDYuNzM5LTUuNzY2IDYuNzM5WiIgZmlsbD0iIzAwMCIvPjwvc3ZnPg=="
+              alt=""
+            />
+          </button>
+          <div class="mt-12">
+            <div
+              id="carousel-content"
+              class="p-4 bg-[#f6f8fc] border-s-4 border-[#f5a782]"
+            >
+              <div class="carousel-item block">
+                <blockquote class="italic text-[#4c527d]">
+                  "Excellent revision tool, specially when you have an interview
+                  coming up in 15 days or so. It's so hard to find everything in
+                  one place."
+                </blockquote>
+              </div>
+              <div class="carousel-item hidden">
+                <blockquote class="italic text-[#4c527d]">
+                  "Highly recommended if you're interviewing or preparing these
+                  days - this guide will help you revise concepts and practice
+                  things before the interview."
+                </blockquote>
+              </div>
+              <div class="carousel-item hidden">
+                <blockquote class="italic text-[#4c527d]">
+                  "Awesome! Love how the concepts are explained + all the
+                  wonderful resources mentioned. Having everything in one guide
+                  is super helpful."
+                </blockquote>
+              </div>
+            </div>
+            <div
+              id="carousel-indicators"
+              class="flex justify-center gap-2 mt-12"
+            >
+              <div
+                class="carousel-indicator bg-[#4c527d] h-[10px] w-[10px] rounded-full"
+              ></div>
+              <div
+                class="carousel-indicator bg-[#a4a7bd] h-[10px] w-[10px] rounded-full"
+              ></div>
+              <div
+                class="carousel-indicator bg-[#a4a7bd] h-[10px] w-[10px] rounded-full"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="./assets/dsa-main.png" alt="dsa main" />
+          <div
+            class="bg-[#5cb377] text-center rounded-full w-fit absolute top-[-32px] right-0 w-[100px] h-[100px] flex justify-center items-center"
+          >
+            <p
+              class="font-[quicksand] font-bold text-xl leading-5 text-white p-3"
+            >
+              New <br />
+              Release
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="content" class="my-6 md:flex md:flex-col md:gap-4 md:my-12">
+        <div class="mb-12 md:mb-0">
+          <h2
+            class="font-[quicksand] text-black font-bold text-[28px] text-center my-12"
+          >
+            What's Included
+          </h2>
+        </div>
+
+        <div
+          class="w-full flex flex-col justify-center mb-12 md:mb-0 md:flex-row md:gap-6 lg:gap-0"
+        >
+          <img
+            src="./assets/dsa-2.png"
+            alt="contents"
+            class="mb-12 md:w-1/2 md:mb-0 lg:w-1/4"
+          />
+          <div class="flex flex-col items-center md:w-1/2 md:w-1/4">
+            <ul class="w-fit mx-auto mb-6 md:w-4/5">
+              <li
+                class="flex items-center gap-2 text-[#4c527d] text-[18px] font-normal mb-4"
+              >
+                <img
+                  class="h-[18px] w-[18px]"
+                  src="./assets/check-circle.svg"
+                  alt=""
+                />15+ algo patterns discussed
+              </li>
+              <li
+                class="flex items-center gap-2 text-[#4c527d] text-[18px] font-normal mb-4"
+              >
+                <img
+                  class="h-[18px] w-[18px]"
+                  src="./assets/check-circle.svg"
+                  alt=""
+                />Detailed solutions and explanations
+              </li>
+              <li
+                class="flex items-center gap-2 text-[#4c527d] text-[18px] font-normal mb-4"
+              >
+                <img
+                  class="h-[18px] w-[18px]"
+                  src="./assets/check-circle.svg"
+                  alt=""
+                />Awesome resources, articles, blogs
+              </li>
+              <li
+                class="flex items-center gap-2 text-[#4c527d] text-[18px] font-normal mb-4"
+              >
+                <img
+                  class="h-[18px] w-[18px]"
+                  src="./assets/check-circle.svg"
+                  alt=""
+                />Visualizers and animations included
+              </li>
+              <li
+                class="flex items-center gap-2 text-[#4c527d] text-[18px] font-normal mb-4"
+              >
+                <img
+                  class="h-[18px] w-[18px]"
+                  src="./assets/check-circle.svg"
+                  alt=""
+                />100 pages of quality content
+              </li>
+              <li
+                class="flex items-center gap-2 text-[#4c527d] text-[18px] font-normal mb-4"
+              >
+                <img
+                  class="h-[18px] w-[18px]"
+                  src="./assets/check-circle.svg"
+                  alt=""
+                />Concepts explained for beginners
+              </li>
+              <li
+                class="flex items-center gap-2 text-[#4c527d] text-[18px] font-normal mb-4"
+              >
+                <img
+                  class="h-[18px] w-[18px]"
+                  src="./assets/check-circle.svg"
+                  alt=""
+                />All in one revision guide
+              </li>
+            </ul>
+            <button
+              class="text-white bg-[#ed6524] rounded-[32px] px-10 py-[14px] w-fit"
+            >
+              Download for free
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        id="testimonial"
+        class="mt-8 flex flex-col gap-4 md:flex-row md:flex-wrap md:justify-between"
+      >
+        <div
+          class="px-4 py-8 border-y border-y-[#ececec] w-full md:w-[48%] bg-white md:border md:border-[#ececec] md:rounded-md"
+        >
+          <p class="text-[gray] leading-7 mb-5 font-normal">
+            “Walling helps us
+            <strong class="font-medium text-black"
+              >visually organise ideas and tasks</strong
+            >, work collaboratively and efficiently within our team. The visual
+            experience makes it so easy to plan content and stay on track with
+            our projects and campaigns.”
+          </p>
+          <div class="flex justify-start items-center gap-3">
+            <img
+              src="https://walling.app/img/HarveyMoss.cdd68f09.jpg"
+              alt="user harsh"
+              class="w-[60px] h-[60px] rounded-full"
+            />
+            <div>
+              <p class="text-[gray] text-base">
+                <span class="text-[#4c527d]">Harsh Pandey</span> <br />
+                Head of Development
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="px-4 py-8 border-y border-y-[#ececec] w-full md:w-[48%] bg-white md:border md:border-[#ececec] md:rounded-md"
+        >
+          <p class="text-[gray] leading-7 mb-5 font-normal">
+            “Walling helps us
+            <strong class="font-medium text-black"
+              >visually organise ideas and tasks</strong
+            >, work collaboratively and efficiently within our team. The visual
+            experience makes it so easy to plan content and stay on track with
+            our projects and campaigns.”
+          </p>
+          <div class="flex justify-start items-center gap-3">
+            <img
+              src="https://walling.app/img/HarveyMoss.cdd68f09.jpg"
+              alt="user harsh"
+              class="w-[60px] h-[60px] rounded-full"
+            />
+            <div>
+              <p class="text-[gray] text-base">
+                <span class="text-[#4c527d]">Harsh Pandey</span> <br />
+                Head of Development
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="px-4 py-8 border-y border-y-[#ececec] w-full md:w-[48%] bg-white md:border md:border-[#ececec] md:rounded-md"
+        >
+          <p class="text-[gray] leading-7 mb-5 font-normal">
+            “Walling helps us
+            <strong class="font-medium text-black"
+              >visually organise ideas and tasks</strong
+            >, work collaboratively and efficiently within our team. The visual
+            experience makes it so easy to plan content and stay on track with
+            our projects and campaigns.”
+          </p>
+          <div class="flex justify-start items-center gap-3">
+            <img
+              src="https://walling.app/img/HarveyMoss.cdd68f09.jpg"
+              alt="user harsh"
+              class="w-[60px] h-[60px] rounded-full"
+            />
+            <div>
+              <p class="text-[gray] text-base">
+                <span class="text-[#4c527d]">Harsh Pandey</span> <br />
+                Head of Development
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="px-4 py-8 border-y border-y-[#ececec] w-full md:w-[48%] bg-white md:border md:border-[#ececec] md:rounded-md"
+        >
+          <p class="text-[gray] leading-7 mb-5 font-normal">
+            “Walling helps us
+            <strong class="font-medium text-black"
+              >visually organise ideas and tasks</strong
+            >, work collaboratively and efficiently within our team. The visual
+            experience makes it so easy to plan content and stay on track with
+            our projects and campaigns.”
+          </p>
+          <div class="flex justify-start items-center gap-3">
+            <img
+              src="https://walling.app/img/HarveyMoss.cdd68f09.jpg"
+              alt="user harsh"
+              class="w-[60px] h-[60px] rounded-full"
+            />
+            <div>
+              <p class="text-[gray] text-base">
+                <span class="text-[#4c527d]">Harsh Pandey</span> <br />
+                Head of Development
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="w-full text-center py-12">
+        <small class="text-[14px] font-normal text-[#4c527d]">
+          Designed with
+          <img class="h-4 inline" src="./assets/love.svg" alt="love symbol" />
+          by
+          <a
+            class="text-[#1c1e2e] underline"
+            href="http://themes.3rdwavemedia.com"
+            target="_blank"
+            >Xiaoying Riley</a
+          >
+        </small>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
